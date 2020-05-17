@@ -25,12 +25,13 @@ export class AddEditContactComponent implements OnInit {
       lastName: ['', [Validators.required, Validators.pattern(`^[A-Za-z]+$`)]],
       email: [
         '',
-        [Validators.required, Validators.pattern(`^[^\s@]+@[^\s@]+\.[^\s@]+$`)],
+        [Validators.required, Validators.pattern(`^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$`)],
       ],
       phone: ['', [Validators.required, Validators.pattern(`^[0-9]{10}$`)]],
       status: ['inactive'],
       id: [''],
     });
+
     /**
      * Check whether is is present in url
      */

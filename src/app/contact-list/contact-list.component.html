@@ -1,7 +1,7 @@
 <div class="container">
   <h2 class="table-header">Contact List</h2>
   <button class="app-button add-button" routerLink="/add">
-    + Add new contact
+    + Add a New Contact
   </button>
   <table class="table table-hover">
     <thead>
@@ -10,9 +10,9 @@
         <th>Lastname</th>
         <th>Email</th>
         <th>Phone</th>
-        <th>Status</th>
+        <th>Current Status</th>
         <th>Edit</th>
-        <th>Status</th>
+        <th>Change Status</th>
         <th>Delete</th>
       </tr>
     </thead>
@@ -31,7 +31,7 @@
 
         <td>
           <button class="btn btn-info" (click)="changeStatus(contact.id)">
-            ChangeStatus
+            Change Status
           </button>
         </td>
         <td>

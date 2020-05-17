@@ -6,22 +6,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Steps to run the Project:-
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Go to the GIT repository.
+2. Clone the Project.
+3. Extract the cloned file.
+4. Go to the project directory.
+5. Run the command: `npm install`.
+6. Once the node_modules folder is downloaded in the project, run the command: `ng serve`.
+7. Once the project runs successfully, go to the browser and tye the URL: `locahost:4200`.
+8. The first page shown is the contacts list page which. 
+   This contains the list of contacts. 
+   Initially, I have added a single entry into the list.
+   Else, I have implemented all the functionalities expected.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -1,4 +1,4 @@
-<h2>{{ isUpdateMode ? "Update contact from" : "Add new contact form" }}</h2>
+<h2>{{ isUpdateMode ? "Update Contact Form" : "Add New Contact Form" }}</h2>
 <hr />
 <div class="container">
   <form class="form" [formGroup]="contactForm" (ngSubmit)="addUpdateContact()">
@@ -28,7 +28,7 @@
             First name is required
           </div>
           <div *ngIf="control.firstName?.errors?.pattern">
-            Enter valid first name
+            Enter a valid name
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
             Last name is required
           </div>
           <div *ngIf="control.lastName?.errors?.pattern">
-            Enter valid Last name
+            Enter a valid name
           </div>
         </div>
       </div>
@@ -87,10 +87,10 @@
           "
         >
           <div *ngIf="control.email?.errors?.required">
-            email is required
+            Email is required
           </div>
           <div *ngIf="control.email?.errors?.pattern">
-            Enter valid email address
+            Enter a valid email address
           </div>
         </div>
       </div>
@@ -117,10 +117,10 @@
           "
         >
           <div *ngIf="control.phone?.errors?.required">
-            Phone is required
+            Phone Number is required
           </div>
           <div *ngIf="control.phone?.errors?.pattern">
-            Enter valid phone number
+            Enter a valid phone number
           </div>
         </div>
       </div>
@@ -136,9 +136,9 @@
     </div>
     <hr />
     <div class="form-footer">
-      <button class="btn default-button" routerLink="">Back <<</button>
+      <button class="btn default-button" routerLink=""> << Back </button>
       <button class="btn btn-primary" [disabled]="!contactForm.valid">
-        {{ isUpdateMode ? "update" : " Submit" }}
+        {{ isUpdateMode ? "Update" : " Submit" }}
       </button>
       <button
         type="button"
